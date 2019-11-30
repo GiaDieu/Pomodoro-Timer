@@ -1,0 +1,68 @@
+* {
+  color: #ffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.interval-container {
+  display: flex;
+  margin: 0 40px;
+  align-items: center;
+}
+.interval {
+  display: flex;
+}
+
+button {
+  padding: 5px 11px;
+  margin: 0 10px;
+  height: 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  outline: none;
+  background: #1abc9c;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.interval-timer {
+  font-size: 2rem;
+  margin: 0 10px;
+}
+
+h3 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.working-time {
+  border: 2px solid #fff;
+  margin-top: 40px;
+  border-radius: 25px;
+  font-size: 15px;
+  width: 250px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.timer {
+  font-size: 2rem;
+}
+
+.Pomo-action {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
