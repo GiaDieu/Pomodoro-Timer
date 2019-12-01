@@ -7,8 +7,15 @@ import {
   disabledAction
 } from "../actions";
 const mapStateToProps = state => {
-  const { isSession, timerMinute, timerSecond, intervalId } = state.Timer;
+  const {
+    isSession,
+    timerMinute,
+    timerSecond,
+    intervalId,
+    isRunning
+  } = state.Timer;
   return {
+    isRunning,
     isSession,
     timerMinute,
     timerSecond,

@@ -28,7 +28,10 @@ class Duration extends React.Component {
   render() {
     return (
       <div>
-        <div className="working-time">
+        <div
+          className="working-time"
+          style={{ background: this.props.isSession ? "#1abc9c" : "#e67e22" }}
+        >
           <h3>{this.props.isSession ? "Coding Time" : "Break Time"}</h3>
           <span className="timer">{this.props.timerMinute}</span>
           <span className="timer">:</span>
@@ -39,7 +42,10 @@ class Duration extends React.Component {
           </span>
         </div>
         <div className="Pomo-action">
-          <button onClick={() => this.tick()}>
+          <button
+            disabled={this.props.isRunning === true ? "disabled" : ""}
+            onClick={() => this.tick()}
+          >
             <i className="play icon"></i>
           </button>
           <button onClick={() => this.stop()}>
